@@ -1,0 +1,437 @@
+/* Revive Elixir Landing Page - Oribe-Inspired Design */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --color-primary: #1a1a1a;
+  --color-secondary: #8b7355;
+  --color-accent: #c9a86a;
+  --color-background: #fafaf8;
+  --color-white: #ffffff;
+  --color-text: #2d2d2d;
+  --color-text-light: #666666;
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  line-height: 1.6;
+  background-color: var(--color-background);
+}
+
+.revive-landing {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-lg) 5%;
+  background: linear-gradient(135deg, #fafaf8 0%, #f5f3ef 100%);
+}
+
+.hero-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  align-items: center;
+}
+
+.hero-text {
+  padding-right: var(--spacing-md);
+}
+
+.product-title {
+  font-family: var(--font-heading);
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  margin-bottom: var(--spacing-sm);
+}
+
+.subtitle {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+  margin-top: var(--spacing-xs);
+  letter-spacing: 0.05em;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-text-light);
+  margin: var(--spacing-md) 0;
+  max-width: 500px;
+}
+
+.hero-cta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.price {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.add-to-cart {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: var(--font-body);
+}
+
+.add-to-cart:hover {
+  background-color: var(--color-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 3/4;
+  background: linear-gradient(135deg, #e8e4db 0%, #d4cfc4 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-text-light);
+}
+
+/* Section Styling */
+section {
+  padding: var(--spacing-xl) 5%;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  letter-spacing: 0.02em;
+}
+
+/* Benefits Section */
+.benefits {
+  background-color: var(--color-white);
+}
+
+.benefits-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.benefit-card {
+  text-align: center;
+  padding: var(--spacing-md);
+  transition: var(--transition);
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.benefit-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+  font-weight: 500;
+}
+
+.benefit-card p {
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+/* Ingredients Section */
+.ingredients {
+  background-color: var(--color-background);
+}
+
+.ingredients-list {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.ingredient {
+  padding: var(--spacing-md);
+  background-color: var(--color-white);
+  border-radius: 4px;
+  transition: var(--transition);
+  border-left: 3px solid var(--color-accent);
+}
+
+.ingredient:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateX(5px);
+}
+
+.ingredient h3 {
+  font-family: var(--font-heading);
+  font-size: 1.375rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+  font-weight: 500;
+}
+
+.ingredient p {
+  color: var(--color-text-light);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* How to Use Section */
+.how-to-use {
+  background-color: var(--color-white);
+}
+
+.usage-instructions {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.instruction {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--color-background);
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.instruction:hover {
+  background-color: #f0ede8;
+}
+
+.step-number {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  min-width: 50px;
+}
+
+.instruction p {
+  font-size: 1.125rem;
+  color: var(--color-text);
+  padding-top: 0.5rem;
+}
+
+/* Certifications Section */
+.certifications {
+  background-color: var(--color-background);
+}
+
+.badges {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.badge {
+  text-align: center;
+  padding: var(--spacing-md);
+}
+
+.badge span {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: var(--spacing-sm);
+}
+
+.badge p {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+/* Final CTA Section */
+.final-cta {
+  text-align: center;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: var(--color-white);
+  padding: var(--spacing-xl) 5%;
+}
+
+.final-cta h2 {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+  font-weight: 500;
+}
+
+.final-cta p {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-lg);
+  opacity: 0.9;
+}
+
+.add-to-cart-large {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: none;
+  padding: 1.25rem 3rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: var(--font-body);
+  border-radius: 4px;
+}
+
+.add-to-cart-large:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .product-title {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.75rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: var(--spacing-md) 5%;
+    min-height: auto;
+  }
+
+  .product-title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: var(--spacing-lg) 5%;
+  }
+
+  .benefits-grid,
+  .ingredients-list {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .final-cta h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1.5rem;
+  }
+
+  .add-to-cart {
+    padding: 0.875rem 2rem;
+    font-size: 0.9rem;
+  }
+}
