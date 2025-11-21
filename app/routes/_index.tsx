@@ -12,6 +12,10 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
+  const handleAddToCart = () => {
+    window.location.href = 'https://lanfredi.com/cart/45881550930165:1?redirect=/checkout';
+  };
+
   return (
     <div className="revive-landing">
       {/* Limited Time Discount Banner */}
@@ -56,13 +60,13 @@ export default function Index() {
                 <span className="price">$29.99</span>
                 <span className="savings">Save $15.96!</span>
               </div>
-              <a
-                href="https://lanfredi.com/cart/45881550930165:1?redirect=/checkout"
+              <button
+                onClick={handleAddToCart}
                 className="add-to-cart"
-                style={{textDecoration: 'none', display: 'inline-block'}}
+                type="button"
               >
                 Add to Cart
-              </a>
+              </button>
             </div>
           </div>
           <div className="hero-image">
@@ -478,13 +482,13 @@ export default function Index() {
           results-driven hair care
         </p>
         <div className="final-cta-buttons">
-          <a
-            href="https://lanfredi.com/cart/45881550930165:1?redirect=/checkout"
+          <button
+            onClick={handleAddToCart}
             className="add-to-cart-large"
-            style={{textDecoration: 'none', display: 'inline-block'}}
+            type="button"
           >
             Add to Cart - $29.99 (Save $15.96!)
-          </a>
+          </button>
           <p className="guarantee">
             ✓ Limited Time Offer · Free shipping on orders over $50
           </p>
