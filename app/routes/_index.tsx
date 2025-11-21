@@ -61,8 +61,11 @@ export default function Index() {
           </div>
           <div className="hero-image">
             <div className="image-placeholder">
-              {/* Product image will go here */}
-              <p>Product Image</p>
+              <img
+                src="/Revive Elixir Studio.JPG"
+                alt="REVIVE Hydrate & Repair Elixir - Brazilian Hair Treatment"
+                style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: '8px'}}
+              />
             </div>
           </div>
         </div>
@@ -389,102 +392,73 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="testimonials">
-        <h2 className="section-title">Real Results from Real People</h2>
-        <p className="section-subtitle">
-          See what customers are saying about REVIVE Elixir
-        </p>
-        <div className="testimonials-grid">
-          <div className="testimonial-card">
-            <div className="stars">★★★★★</div>
-            <p className="testimonial-text">
-              "This elixir completely transformed my damaged, color-treated hair.
-              After just one use, my hair felt softer and looked so much shinier.
-              The Brazilian botanicals really work!"
-            </p>
-            <p className="testimonial-author">— Sarah M., Miami, FL</p>
-          </div>
-          <div className="testimonial-card">
-            <div className="stars">★★★★★</div>
-            <p className="testimonial-text">
-              "I love that it's vegan and uses natural ingredients. No more frizz,
-              and my hair stays smooth all day even in humidity. Worth every penny!"
-            </p>
-            <p className="testimonial-author">— Jessica L., Austin, TX</p>
-          </div>
-          <div className="testimonial-card">
-            <div className="stars">★★★★★</div>
-            <p className="testimonial-text">
-              "As a hairstylist, I recommend REVIVE to all my clients with heat-damaged
-              hair. The heat protection is amazing, and the shine it gives is unmatched."
-            </p>
-            <p className="testimonial-author">— Maria R., Los Angeles, CA</p>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
       <section className="faq">
         <h2 className="section-title">Frequently Asked Questions</h2>
         <div className="faq-container">
           <div className="faq-item">
+            <h3 className="faq-question">How quickly will I see results?</h3>
+            <p className="faq-answer">
+              You'll notice a difference after the very first use! Hair will feel
+              softer, look shinier, and be more manageable immediately. With
+              continued use, you'll see even more dramatic improvements in hair
+              strength, reduced frizz, and overall hair health.
+            </p>
+          </div>
+          <div className="faq-item">
+            <h3 className="faq-question">Is REVIVE Elixir 100% natural and vegan?</h3>
+            <p className="faq-answer">
+              Yes! REVIVE is made with 100% natural ingredients including Brazilian
+              botanicals like Buriti Oil and Babaçu Extract. It's completely vegan,
+              cruelty-free, gluten-free, and Safe Beauty certified. No harsh chemicals,
+              parabens, sulfates, or animal-derived ingredients—just pure, plant-based
+              hair care.
+            </p>
+          </div>
+          <div className="faq-item">
             <h3 className="faq-question">How often should I use REVIVE Elixir?</h3>
             <p className="faq-answer">
-              Use REVIVE Elixir every time you wash your hair, or as needed for a
-              midday refresh. For best results, apply to towel-dried hair after
-              shampooing and conditioning. You can also lightly spray on dry hair
-              throughout the day for added shine and frizz control.
+              Use REVIVE Elixir every time you wash your hair for best results.
+              Apply to towel-dried hair after shampooing and conditioning. You can
+              also lightly spray on dry hair throughout the day for added shine and
+              frizz control—it's gentle enough for daily use.
             </p>
           </div>
           <div className="faq-item">
             <h3 className="faq-question">Is it safe for color-treated or chemically processed hair?</h3>
             <p className="faq-answer">
-              Absolutely! REVIVE Elixir is specifically formulated to repair and protect
-              chemically treated hair. The Buriti Oil is rich in antioxidants that help
-              preserve color, while plant-based keratin strengthens hair weakened by
-              chemical treatments like coloring, bleaching, or perms.
+              Absolutely! REVIVE Elixir is specifically formulated with natural
+              ingredients to repair and protect chemically treated hair. The Buriti
+              Oil is rich in antioxidants that help preserve color, while plant-based
+              keratin strengthens hair weakened by chemical treatments like coloring,
+              bleaching, or perms.
             </p>
           </div>
           <div className="faq-item">
             <h3 className="faq-question">Will it make my hair greasy or weigh it down?</h3>
             <p className="faq-answer">
-              No! REVIVE is a lightweight formula designed to hydrate without heaviness.
-              The Babaçu Extract provides deep moisture while keeping hair light and
-              bouncy. It's perfect for all hair types, including fine and oily hair.
+              No! Despite being packed with natural oils and botanicals, REVIVE is a
+              lightweight formula designed to hydrate without heaviness. The Babaçu
+              Extract provides deep moisture while keeping hair light and bouncy. It's
+              perfect for all hair types, including fine and oily hair.
             </p>
           </div>
           <div className="faq-item">
             <h3 className="faq-question">Can I use it with heat styling tools?</h3>
             <p className="faq-answer">
-              Yes! REVIVE Elixir provides excellent heat protection. Apply it to
-              towel-dried hair before blow-drying, flat ironing, or curling. The
-              exotic oil blend shields your hair from heat damage while adding shine.
-            </p>
-          </div>
-          <div className="faq-item">
-            <h3 className="faq-question">How long does one bottle last?</h3>
-            <p className="faq-answer">
-              Depending on your hair length and thickness, one bottle typically lasts
-              1-2 months with regular use. A little goes a long way—just a few pumps
-              are enough for most hair types.
-            </p>
-          </div>
-          <div className="faq-item">
-            <h3 className="faq-question">Do I need to rinse it out?</h3>
-            <p className="faq-answer">
-              No rinsing needed! REVIVE is a leave-in treatment. Simply apply to
-              towel-dried hair, comb through, and style as usual. The formula absorbs
-              quickly without leaving any residue.
+              Yes! REVIVE Elixir provides excellent natural heat protection. Apply it
+              to towel-dried hair before blow-drying, flat ironing, or curling. The
+              exotic blend of 10 natural oils shields your hair from heat damage while
+              adding shine and smoothness.
             </p>
           </div>
           <div className="faq-item">
             <h3 className="faq-question">Is it suitable for all hair types?</h3>
             <p className="faq-answer">
-              Yes! REVIVE Elixir works beautifully on all hair types—straight, wavy,
-              curly, or coily. Whether your hair is fine, thick, dry, or oily, the
-              natural botanicals adapt to give you the perfect level of hydration
-              and shine.
+              Yes! REVIVE Elixir's all-natural formula works beautifully on all hair
+              types—straight, wavy, curly, or coily. Whether your hair is fine, thick,
+              dry, or oily, the natural Brazilian botanicals adapt to give you the
+              perfect level of hydration and shine.
             </p>
           </div>
         </div>
