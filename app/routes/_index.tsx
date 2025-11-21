@@ -56,7 +56,13 @@ export default function Index() {
                 <span className="price">$29.99</span>
                 <span className="savings">Save $15.96!</span>
               </div>
-              <button className="add-to-cart">Add to Cart</button>
+              <a
+                href="https://lanfredi.com/products/revive-elixir"
+                className="add-to-cart"
+                style={{textDecoration: 'none', display: 'inline-block'}}
+              >
+                Add to Cart
+              </a>
             </div>
           </div>
           <div className="hero-image">
@@ -472,7 +478,13 @@ export default function Index() {
           results-driven hair care
         </p>
         <div className="final-cta-buttons">
-          <button className="add-to-cart-large">Add to Cart - $29.99 (Save $15.96!)</button>
+          <a
+            href="https://lanfredi.com/products/revive-elixir"
+            className="add-to-cart-large"
+            style={{textDecoration: 'none', display: 'inline-block'}}
+          >
+            Add to Cart - $29.99 (Save $15.96!)
+          </a>
           <p className="guarantee">
             ✓ Limited Time Offer · Free shipping on orders over $50
           </p>
