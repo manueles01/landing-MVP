@@ -57,7 +57,7 @@ export default function Index() {
                 <span className="savings">Save $15.96!</span>
               </div>
               <a
-                href="https://lanfredi.com/products/revive-elixir"
+                href="https://lanfredi.com/cart/45881550930165:1?redirect=/checkout"
                 className="add-to-cart"
                 style={{textDecoration: 'none', display: 'inline-block'}}
               >
@@ -479,7 +479,7 @@ export default function Index() {
         </p>
         <div className="final-cta-buttons">
           <a
-            href="https://lanfredi.com/products/revive-elixir"
+            href="https://lanfredi.com/cart/45881550930165:1?redirect=/checkout"
             className="add-to-cart-large"
             style={{textDecoration: 'none', display: 'inline-block'}}
           >
