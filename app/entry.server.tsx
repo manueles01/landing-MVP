@@ -1,9 +1,7 @@
 import type {EntryContext} from '@shopify/remix-oxygen';
 import {RemixServer} from '@remix-run/react';
 import {isbot} from 'isbot';
-import ReactDOMServer from 'react-dom/server';
-
-const {renderToReadableStream} = ReactDOMServer;
+import {renderToString} from 'react-dom/server';
 
 export default async function handleRequest(
   request: Request,
@@ -11,23 +9,12 @@ export default async function handleRequest(
   responseHeaders: Headers,
   remixContext: EntryContext,
 ) {
-  const body = await renderToReadableStream(
-    <RemixServer context={remixContext} url={request.url} />,
-    {
-      signal: request.signal,
-      onError(error) {
-        console.error(error);
-        responseStatusCode = 500;
-      },
-    },
+  const markup = renderToString(
+    <RemixServer context={remixContext} url={request.url} />
   );
 
-  if (isbot(request.headers.get('user-agent'))) {
-    await body.allReady;
-  }
-
   responseHeaders.set('Content-Type', 'text/html');
-  return new Response(body, {
+  return new Response('<!DOCTYPE html>' + markup, {
     headers: responseHeaders,
     status: responseStatusCode,
   });
