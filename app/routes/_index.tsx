@@ -46,9 +46,6 @@ export default function Index() {
             <div className="hero-cta">
               <div className="price-block">
                 <span className="price">$45.95</span>
-                <span className="payment-note">
-                  Pay over time with orders over $35
-                </span>
               </div>
               <button className="add-to-cart">Add to Cart</button>
             </div>
@@ -393,7 +390,7 @@ export default function Index() {
         <div className="final-cta-buttons">
           <button className="add-to-cart-large">Add to Cart - $45.95</button>
           <p className="guarantee">
-            ✓ Pay over time for orders over $35 · Free shipping on orders over $50
+            ✓ Free shipping on orders over $50
           </p>
         </div>
       </section>
