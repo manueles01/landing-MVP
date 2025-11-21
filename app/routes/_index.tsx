@@ -62,7 +62,7 @@ export default function Index() {
           <div className="hero-image">
             <div className="image-placeholder">
               <img
-                src="/Revive Elixir Studio.JPG"
+                src="/revive-elixir-studio.jpg"
                 alt="REVIVE Hydrate & Repair Elixir - Brazilian Hair Treatment"
                 style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: '8px'}}
               />
