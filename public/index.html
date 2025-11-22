@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>REVIVE Hydrate & Repair Elixir | Brazilian Hair Care | Lanfredi</title>
+  <meta name="description" content="Brazilian formula combining nature and science. 3-in-1 leave-in treatment with plant-based ingredients for shine, heat protection, and frizz-free results." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #1a1a1a;
+      --color-secondary: #8b7355;
+      --color-accent: #c9a86a;
+      --color-gold: #d4af37;
+      --color-background: #fafaf8;
+      --color-white: #ffffff;
+      --color-text: #2d2d2d;
+      --color-text-light: #666666;
+      --color-border: #e5e5e5;
+      --font-heading: 'Playfair Display', serif;
+      --font-body: 'Inter', sans-serif;
+      --spacing-xs: 0.5rem;
+      --spacing-sm: 1rem;
+      --spacing-md: 2rem;
+      --spacing-lg: 4rem;
+      --spacing-xl: 6rem;
+      --transition: all 0.3s ease;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+      --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+      --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: var(--font-body); color: var(--color-text); line-height: 1.6; background-color: var(--color-background); -webkit-font-smoothing: antialiased; }
+    .revive-landing { width: 100%; overflow-x: hidden; }
+    .discount-banner { background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-gold) 100%); color: var(--color-primary); text-align: center; padding: var(--spacing-sm) 5%; position: sticky; top: 0; z-index: 1000; box-shadow: var(--shadow-md); }
+    .discount-text { font-size: 1.125rem; font-weight: 500; margin: 0; }
+    .discount-text strong { font-weight: 700; }
+    .hero { min-height: 90vh; display: flex; align-items: center; padding: var(--spacing-lg) 5%; background: linear-gradient(135deg, #fafaf8 0%, #f5f3ef 100%); }
+    .hero-content { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); align-items: center; }
+    .hero-text { padding-right: var(--spacing-md); }
+    .badge-group { display: flex; gap: var(--spacing-sm); margin-bottom: var(--spacing-md); flex-wrap: wrap; }
+    .badge-pill { display: inline-block; padding: 0.5rem 1rem; background-color: var(--color-secondary); color: var(--color-white); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; border-radius: 20px; }
+    .product-title { font-family: var(--font-heading); font-size: 4.5rem; font-weight: 600; color: var(--color-primary); line-height: 1.1; letter-spacing: 0.02em; margin-bottom: var(--spacing-xs); }
+    .subtitle { display: block; font-size: 2rem; font-weight: 400; color: var(--color-secondary); margin-top: var(--spacing-xs); letter-spacing: 0.05em; }
+    .tagline { font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-accent); font-style: italic; margin-bottom: var(--spacing-sm); }
+    .hero-description { font-size: 1.125rem; line-height: 1.8; color: var(--color-text-light); margin: var(--spacing-md) 0; max-width: 550px; }
+    .perfect-for { margin: var(--spacing-md) 0; padding: var(--spacing-md); background-color: rgba(201, 168, 106, 0.08); border-left: 3px solid var(--color-accent); border-radius: 4px; }
+    .perfect-for .label { font-weight: 600; color: var(--color-primary); display: block; margin-bottom: var(--spacing-xs); text-transform: uppercase; font-size: 0.875rem; letter-spacing: 0.05em; }
+    .perfect-for .tags { display: flex; flex-wrap: wrap; gap: var(--spacing-sm); }
+    .perfect-for .tags span { font-size: 0.95rem; color: var(--color-text); }
+    .hero-cta { display: flex; align-items: center; gap: var(--spacing-md); margin-top: var(--spacing-lg); flex-wrap: wrap; }
+    .price-block { display: flex; flex-direction: column; }
+    .price-original { font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-text-light); text-decoration: line-through; display: block; font-weight: 400; }
+    .price { font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-accent); font-weight: 600; display: block; }
+    .savings { font-size: 1rem; color: #27ae60; font-weight: 600; display: block; margin-top: 0.25rem; }
+    .add-to-cart { background-color: var(--color-primary); color: var(--color-white); border: none; padding: 1.125rem 2.5rem; font-size: 1rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; transition: var(--transition); font-family: var(--font-body); border-radius: 2px; box-shadow: var(--shadow-sm); }
+    .add-to-cart:hover { background-color: var(--color-secondary); transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+    .hero-image { display: flex; justify-content: center; align-items: center; }
+    .image-placeholder { width: 100%; max-width: 500px; aspect-ratio: 3/4; background: linear-gradient(135deg, #e8e4db 0%, #d4cfc4 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-md); overflow: hidden; }
+    .image-placeholder img { width: 100%; height: 100%; object-fit: cover; }
+    section { padding: var(--spacing-xl) 5%; }
+    .section-title { font-family: var(--font-heading); font-size: 3rem; font-weight: 500; color: var(--color-primary); text-align: center; margin-bottom: var(--spacing-md); letter-spacing: 0.02em; }
+    .section-subtitle { text-align: center; font-size: 1.25rem; color: var(--color-text-light); margin-bottom: var(--spacing-lg); max-width: 700px; margin-left: auto; margin-right: auto; }
+    .lead { font-size: 1.25rem; line-height: 1.8; color: var(--color-text); margin-bottom: var(--spacing-md); text-align: center; max-width: 800px; margin-left: auto; margin-right: auto; }
+    .heritage { background-color: var(--color-white); }
+    .heritage-content { max-width: 1000px; margin: 0 auto; }
+    .heritage-text { text-align: center; }
+    .heritage-text p { font-size: 1.125rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: var(--spacing-md); }
+    .heritage-features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-lg); margin-top: var(--spacing-lg); }
+    .heritage-features .feature { text-align: center; padding: var(--spacing-md); background-color: var(--color-background); border-radius: 8px; transition: var(--transition); }
+    .heritage-features .feature:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+    .heritage-features .icon { font-size: 3rem; display: block; margin-bottom: var(--spacing-sm); }
+    .heritage-features strong { display: block; font-family: var(--font-heading); font-size: 1.25rem; color: var(--color-primary); margin-bottom: var(--spacing-xs); }
+    .heritage-features p { font-size: 0.95rem; color: var(--color-text-light); }
+    .transformation { background-color: var(--color-background); }
+    .transformation-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--spacing-md); }
+    .transform-card { padding: var(--spacing-md); background-color: var(--color-white); border-radius: 8px; transition: var(--transition); border-top: 4px solid var(--color-accent); }
+    .transform-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+    .transform-card .number { font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-accent); font-weight: 600; margin-bottom: var(--spacing-sm); opacity: 0.6; }
+    .transform-card h3 { font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-primary); margin-bottom: var(--spacing-sm); font-weight: 500; }
+    .transform-card p { color: var(--color-text-light); line-height: 1.7; font-size: 0.95rem; }
+    .ingredients-spotlight { background-color: var(--color-white); }
+    .ingredients-showcase { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-lg); }
+    .ingredient-featured { padding: var(--spacing-md); background-color: var(--color-background); border-radius: 8px; transition: var(--transition); text-align: center; }
+    .ingredient-featured:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); background-color: var(--color-white); }
+    .ingredient-icon { font-size: 3.5rem; margin-bottom: var(--spacing-sm); }
+    .ingredient-featured h3 { font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-primary); margin-bottom: var(--spacing-xs); font-weight: 500; }
+    .ingredient-featured .origin { display: inline-block; font-size: 0.875rem; color: var(--color-secondary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: var(--spacing-sm); padding: 0.25rem 0.75rem; background-color: rgba(139, 115, 85, 0.1); border-radius: 12px; }
+    .ingredient-featured p { color: var(--color-text-light); line-height: 1.7; font-size: 0.95rem; }
+    .how-to-use { background-color: var(--color-background); }
+    .usage-instructions { max-width: 900px; margin: 0 auto; display: grid; gap: var(--spacing-md); }
+    .instruction { display: flex; align-items: flex-start; gap: var(--spacing-md); padding: var(--spacing-md); background-color: var(--color-white); border-radius: 8px; transition: var(--transition); border-left: 4px solid var(--color-accent); }
+    .instruction:hover { box-shadow: var(--shadow-md); transform: translateX(5px); }
+    .step-number { font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-accent); font-weight: 600; min-width: 60px; text-align: center; }
+    .instruction-content h4 { font-family: var(--font-heading); font-size: 1.25rem; color: var(--color-primary); margin-bottom: var(--spacing-xs); font-weight: 500; }
+    .instruction-content p { font-size: 1rem; color: var(--color-text-light); line-height: 1.7; }
+    .certifications { background-color: var(--color-white); }
+    .badges { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--spacing-lg); }
+    .badge { text-align: center; padding: var(--spacing-md); transition: var(--transition); }
+    .badge:hover { transform: translateY(-5px); }
+    .badge-icon { font-size: 3rem; display: block; margin-bottom: var(--spacing-sm); }
+    .badge h4 { font-family: var(--font-heading); font-size: 1.125rem; color: var(--color-primary); font-weight: 600; margin-bottom: var(--spacing-xs); }
+    .badge p { font-size: 0.875rem; color: var(--color-text-light); }
+    .social-proof { background-color: var(--color-background); }
+    .stats { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-lg); }
+    .stat { text-align: center; padding: var(--spacing-lg) var(--spacing-md); background-color: var(--color-white); border-radius: 8px; box-shadow: var(--shadow-sm); }
+    .stat-number { display: block; font-family: var(--font-heading); font-size: 3rem; color: var(--color-accent); font-weight: 600; margin-bottom: var(--spacing-xs); }
+    .stat-label { display: block; font-size: 1rem; color: var(--color-text); font-weight: 500; }
+    .faq { background-color: var(--color-background); }
+    .faq-container { max-width: 900px; margin: 0 auto; display: grid; gap: var(--spacing-md); }
+    .faq-item { padding: var(--spacing-lg); background-color: var(--color-white); border-radius: 8px; transition: var(--transition); border-left: 4px solid var(--color-accent); }
+    .faq-item:hover { box-shadow: var(--shadow-md); transform: translateX(5px); }
+    .faq-question { font-family: var(--font-heading); font-size: 1.375rem; color: var(--color-primary); margin-bottom: var(--spacing-sm); font-weight: 500; }
+    .faq-answer { font-size: 1.0625rem; line-height: 1.7; color: var(--color-text-light); }
+    .final-cta { text-align: center; background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%); color: var(--color-white); padding: var(--spacing-xl) 5%; }
+    .final-cta h2 { font-family: var(--font-heading); font-size: 3rem; margin-bottom: var(--spacing-md); font-weight: 500; }
+    .final-cta p { font-size: 1.25rem; margin-bottom: var(--spacing-lg); opacity: 0.95; }
+    .final-cta-buttons { display: flex; flex-direction: column; align-items: center; gap: var(--spacing-md); }
+    .add-to-cart-large { background-color: var(--color-white); color: var(--color-primary); border: none; padding: 1.5rem 4rem; font-size: 1.25rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; transition: var(--transition); font-family: var(--font-body); border-radius: 4px; box-shadow: var(--shadow-md); }
+    .add-to-cart-large:hover { background-color: var(--color-accent); color: var(--color-white); transform: translateY(-3px); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3); }
+    .guarantee { font-size: 0.95rem; color: rgba(255, 255, 255, 0.9); margin: 0; }
+    @media (max-width: 1024px) {
+      .hero-content { grid-template-columns: 1fr; gap: var(--spacing-md); }
+      .product-title { font-size: 3.5rem; }
+      .subtitle { font-size: 1.75rem; }
+      .section-title { font-size: 2.5rem; }
+    }
+    @media (max-width: 768px) {
+      .hero { padding: var(--spacing-md) 5%; min-height: auto; }
+      .product-title { font-size: 2.5rem; }
+      .subtitle { font-size: 1.25rem; }
+      .tagline { font-size: 1.125rem; }
+      .hero-cta { flex-direction: column; align-items: flex-start; }
+      .price { font-size: 2rem; }
+      .section-title { font-size: 2rem; }
+      section { padding: var(--spacing-lg) 5%; }
+      .transformation-grid, .ingredients-showcase { grid-template-columns: 1fr; }
+      .final-cta h2 { font-size: 2rem; }
+      .add-to-cart-large { padding: 1.25rem 3rem; font-size: 1.125rem; }
+      .instruction { flex-direction: column; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .product-title { font-size: 2rem; }
+      .subtitle { font-size: 1rem; }
+      .price { font-size: 1.75rem; }
+      .add-to-cart { padding: 1rem 2rem; font-size: 0.9rem; width: 100%; }
+      .badge-group { flex-direction: column; }
+      .add-to-cart-large { width: 100%; padding: 1.25rem 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="revive-landing">
+    <div class="discount-banner">
+      <p class="discount-text">🎉 <strong>LIMITED TIME OFFER:</strong> Save $15.96 - Now Only $29.99!</p>
+    </div>
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="badge-group">
+            <span class="badge-pill">Brazilian Formula</span>
+            <span class="badge-pill">Natural Ingredients</span>
+          </div>
+          <h1 class="product-title">REVIVE<span class="subtitle">Hydrate & Repair Elixir</span></h1>
+          <p class="tagline">Where Brazilian Beauty Meets Hair Science</p>
+          <p class="hero-description">A lightweight 3-in-1 leave-in treatment that restores damaged hair while providing lasting protection and hydration for silky, smooth results. Powered by nature, proven by results.</p>
+          <div class="perfect-for">
+            <span class="label">Perfect For:</span>
+            <div class="tags">
+              <span>✨ Shine</span>
+              <span>🔥 Heat Protection</span>
+              <span>🎨 Color Protection</span>
+              <span>💫 Silkiness</span>
+            </div>
+          </div>
+          <div class="hero-cta">
+            <div class="price-block">
+              <span class="price-original">$45.95</span>
+              <span class="price">$29.99</span>
+              <span class="savings">Save $15.96!</span>
+            </div>
+            <form action="https://lanfredi.com/cart/45881550930165:1" method="get">
+              <input type="hidden" name="redirect" value="/checkout" />
+              <button class="add-to-cart" type="submit">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-placeholder">
+            <img src="/revive-elixir-studio.jpg" alt="REVIVE Hydrate & Repair Elixir - Brazilian Hair Treatment" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="heritage">
+      <div class="heritage-content">
+        <div class="heritage-text">
+          <h2 class="section-title">The Brazilian Difference</h2>
+          <p class="lead">Born from Brazil's rich botanical heritage, REVIVE Elixir combines centuries-old natural wisdom with modern hair science.</p>
+          <p>Our formula harnesses the power of Amazonian botanicals—Buriti Oil and Babaçu Extract—treasured for generations by Brazilian women for their transformative hair benefits.</p>
+          <div class="heritage-features">
+            <div class="feature">
+              <span class="icon">🇧🇷</span>
+              <strong>Brazilian Botanicals</strong>
+              <p>Amazonian ingredients proven through generations</p>
+            </div>
+            <div class="feature">
+              <span class="icon">🌿</span>
+              <strong>Nature-First Formula</strong>
+              <p>Plant-based keratin and natural oils</p>
+            </div>
+            <div class="feature">
+              <span class="icon">🔬</span>
+              <strong>Science-Backed Results</strong>
+              <p>Clinically proven effectiveness</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="transformation">
+      <h2 class="section-title">Complete Hair Transformation</h2>
+      <p class="section-subtitle">One product. Multiple solutions. Works independently for instant results.</p>
+      <div class="transformation-grid">
+        <div class="transform-card">
+          <div class="number">01</div>
+          <h3>Repairs Chemically Treated Hair</h3>
+          <p>Revitalizes and strengthens hair weakened by color, bleach, or chemical treatments with plant-based keratin and essential amino acids</p>
+        </div>
+        <div class="transform-card">
+          <div class="number">02</div>
+          <h3>Extreme Shine & Silkiness</h3>
+          <p>Delivers exceptional luster and smooth texture through our exotic blend of ten natural oils plus vitamin E</p>
+        </div>
+        <div class="transform-card">
+          <div class="number">03</div>
+          <h3>Lightweight Deep Hydration</h3>
+          <p>Moisturizes deeply without weighing hair down—Babaçu Extract ensures nourishment without heaviness</p>
+        </div>
+        <div class="transform-card">
+          <div class="number">04</div>
+          <h3>Cuticle Sealing Technology</h3>
+          <p>Smooths and seals the cuticle for sleek, frizz-free strands that stay manageable all day</p>
+        </div>
+        <div class="transform-card">
+          <div class="number">05</div>
+          <h3>Heat & Environmental Protection</h3>
+          <p>Shields hair from damage caused by heat styling, UV rays, pollution, and environmental stressors</p>
+        </div>
+        <div class="transform-card">
+          <div class="number">06</div>
+          <h3>Color Protection</h3>
+          <p>Preserves and protects color-treated hair with antioxidant-rich ingredients that prevent fading</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ingredients-spotlight">
+      <h2 class="section-title">Powered by Brazilian Nature, Proven by Science</h2>
+      <p class="section-subtitle">Every ingredient is carefully sourced and selected for maximum efficacy</p>
+      <div class="ingredients-showcase">
+        <div class="ingredient-featured">
+          <div class="ingredient-icon">🌴</div>
+          <h3>Buriti Oil</h3>
+          <span class="origin">Amazon Rainforest</span>
+          <p>Known as "tree of life" in the Amazon, this precious oil is rich in vitamins A, C, and E. It deeply hydrates and protects color-treated hair while providing natural UV protection.</p>
+        </div>
+        <div class="ingredient-featured">
+          <div class="ingredient-icon">🥥</div>
+          <h3>Babaçu Extract</h3>
+          <span class="origin">Brazilian Palm</span>
+          <p>Treasured by Brazilian women for centuries, Babaçu provides deep moisture without weight, reduces frizz dramatically, and nourishes the scalp for healthier hair growth.</p>
+        </div>
+        <div class="ingredient-featured">
+          <div class="ingredient-icon">🌱</div>
+          <h3>Plant-Based Keratin</h3>
+          <span class="origin">Vegan Alternative</span>
+          <p>Nature's answer to hair repair. Strengthens damaged fibers, reduces breakage, and enhances smoothness without any animal-derived ingredients.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-to-use">
+      <h2 class="section-title">How to Use Your Elixir</h2>
+      <p class="section-subtitle">Simple application. Professional results.</p>
+      <div class="usage-instructions">
+        <div class="instruction">
+          <span class="step-number">1</span>
+          <div class="instruction-content">
+            <h4>Apply to Towel-Dried Hair</h4>
+            <p>After shampooing and conditioning, apply evenly from roots to ends on towel-dried hair</p>
+          </div>
+        </div>
+        <div class="instruction">
+          <span class="step-number">2</span>
+          <div class="instruction-content">
+            <h4>Comb Through</h4>
+            <p>Use a wide-tooth comb to distribute the product evenly throughout your hair</p>
+          </div>
+        </div>
+        <div class="instruction">
+          <span class="step-number">3</span>
+          <div class="instruction-content">
+            <h4>Style as Desired</h4>
+            <p>No rinsing needed—proceed with your favorite styling routine. Heat protection is built in!</p>
+          </div>
+        </div>
+        <div class="instruction">
+          <span class="step-number">4</span>
+          <div class="instruction-content">
+            <h4>Refresh Anytime</h4>
+            <p>For a midday refresh on dry hair, lightly spray throughout for instant shine and smoothness</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="certifications">
+      <h2 class="section-title">Our Promise to You</h2>
+      <p class="section-subtitle">Clean beauty. Real results. No compromises.</p>
+      <div class="badges">
+        <div class="badge">
+          <span class="badge-icon">🌱</span>
+          <h4>100% Vegan</h4>
+          <p>No animal-derived ingredients</p>
+        </div>
+        <div class="badge">
+          <span class="badge-icon">🐰</span>
+          <h4>Cruelty-Free</h4>
+          <p>Never tested on animals</p>
+        </div>
+        <div class="badge">
+          <span class="badge-icon">🌾</span>
+          <h4>Gluten-Free</h4>
+          <p>Safe for sensitive scalps</p>
+        </div>
+        <div class="badge">
+          <span class="badge-icon">✓</span>
+          <h4>Safe Beauty</h4>
+          <p>Certified clean formula</p>
+        </div>
+        <div class="badge">
+          <span class="badge-icon">🇧🇷</span>
+          <h4>Brazilian Made</h4>
+          <p>Authentic botanicals</p>
+        </div>
+        <div class="badge">
+          <span class="badge-icon">♻️</span>
+          <h4>Sustainable</h4>
+          <p>Responsibly sourced</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-proof">
+      <h2 class="section-title">Loved by Hair Professionals</h2>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-number">3-in-1</span>
+          <span class="stat-label">Treatment, Protection & Styling</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Natural Oils & Botanicals</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">All Types</span>
+          <span class="stat-label">Works on Every Hair Type</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3 class="faq-question">How quickly will I see results?</h3>
+          <p class="faq-answer">You'll notice a difference after the very first use! Hair will feel softer, look shinier, and be more manageable immediately. With continued use, you'll see even more dramatic improvements in hair strength, reduced frizz, and overall hair health.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Is REVIVE Elixir 100% natural and vegan?</h3>
+          <p class="faq-answer">Yes! REVIVE is made with 100% natural ingredients including Brazilian botanicals like Buriti Oil and Babaçu Extract. It's completely vegan, cruelty-free, gluten-free, and Safe Beauty certified.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Is it safe for color-treated or chemically processed hair?</h3>
+          <p class="faq-answer">Absolutely! REVIVE Elixir is specifically formulated with natural ingredients to repair and protect chemically treated hair. The Buriti Oil is rich in antioxidants that help preserve color.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Will it make my hair greasy or weigh it down?</h3>
+          <p class="faq-answer">No! Despite being packed with natural oils and botanicals, REVIVE is a lightweight formula designed to hydrate without heaviness. Perfect for all hair types, including fine and oily hair.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Can I use it with heat styling tools?</h3>
+          <p class="faq-answer">Yes! REVIVE Elixir provides excellent natural heat protection. Apply it to towel-dried hair before blow-drying, flat ironing, or curling.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <h2>Transform Your Hair with Brazilian Botanicals</h2>
+      <p>Join thousands who've discovered the power of nature-backed, results-driven hair care</p>
+      <div class="final-cta-buttons">
+        <form action="https://lanfredi.com/cart/45881550930165:1" method="get">
+          <input type="hidden" name="redirect" value="/checkout" />
+          <button class="add-to-cart-large" type="submit">Add to Cart - $29.99 (Save $15.96!)</button>
+        </form>
+        <p class="guarantee">✓ Limited Time Offer · Free shipping on orders over $50</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
