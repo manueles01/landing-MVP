@@ -6,7 +6,7 @@ import {
   ScrollRestoration,
 } from '@remix-run/react';
 import type {LinksFunction} from '@shopify/remix-oxygen';
-import reviveLandingStyles from './styles/revive-landing.css';
+import reviveLandingStyles from './styles/revive-landing.css?url';
 
 export const links: LinksFunction = () => {
   return [{rel: 'stylesheet', href: reviveLandingStyles}];
