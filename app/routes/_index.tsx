@@ -12,10 +12,6 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  const handleAddToCart = () => {
-    window.location.href = 'https://lanfredi.com/cart/45881550930165:1?redirect=/checkout';
-  };
-
   return (
     <div className="revive-landing">
       {/* Limited Time Discount Banner */}
@@ -60,13 +56,12 @@ export default function Index() {
                 <span className="price">$29.99</span>
                 <span className="savings">Save $15.96!</span>
               </div>
-              <button
-                onClick={handleAddToCart}
-                className="add-to-cart"
-                type="button"
-              >
-                Add to Cart
-              </button>
+              <form action="https://lanfredi.com/cart/45881550930165:1" method="get" style={{display: 'inline'}}>
+                <input type="hidden" name="redirect" value="/checkout" />
+                <button className="add-to-cart" type="submit">
+                  Add to Cart
+                </button>
+              </form>
             </div>
           </div>
           <div className="hero-image">
@@ -482,13 +477,12 @@ export default function Index() {
           results-driven hair care
         </p>
         <div className="final-cta-buttons">
-          <button
-            onClick={handleAddToCart}
-            className="add-to-cart-large"
-            type="button"
-          >
-            Add to Cart - $29.99 (Save $15.96!)
-          </button>
+          <form action="https://lanfredi.com/cart/45881550930165:1" method="get" style={{display: 'inline'}}>
+            <input type="hidden" name="redirect" value="/checkout" />
+            <button className="add-to-cart-large" type="submit">
+              Add to Cart - $29.99 (Save $15.96!)
+            </button>
+          </form>
           <p className="guarantee">
             ✓ Limited Time Offer · Free shipping on orders over $50
           </p>
